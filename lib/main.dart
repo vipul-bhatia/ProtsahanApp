@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'pages/OnboardingPage.dart';
 import 'pages/home.dart';
-
+import '../pages/eventDetail.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -42,6 +42,7 @@ class MyHomePage extends StatelessWidget {
       routes: {
         '/': (context) => OnboardingPage(),
         '/home':(context) => homePage(),
+        '/eventDetail':(context) =>eventDetail(),
       },
     );
   }

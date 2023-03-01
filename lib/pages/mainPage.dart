@@ -40,33 +40,35 @@ class _mainPageState extends State<mainPage> {
               fit: BoxFit.cover,
             ),
           ),
-          Container(
-           margin: EdgeInsets.fromLTRB(0, 400, 0, 0), 
-            
-            child: Column(
-              children: <Widget>[
-                CarouselSlider.builder(
-                  options: CarouselOptions(
-                    // enlargeStrategy: CenterPageEnlargeStrategy.height,
-                    // enlargeFactor: 0.65,
-                    height: 300,
-                    autoPlayInterval: Duration(seconds: 5),
-                    autoPlay: true,
-                    enlargeCenterPage: true,
-                    onPageChanged: (index, reason) =>
-                        setState(() => activeIndex = index),
+          Center(
+            child: Container(
+             margin: EdgeInsets.fromLTRB(0, 300, 0, 0), 
+              
+              child: Column(
+                children: <Widget>[
+                  CarouselSlider.builder(
+                    options: CarouselOptions(
+                      // enlargeStrategy: CenterPageEnlargeStrategy.height,
+                      // enlargeFactor: 0.65,
+                      height: 300,
+                      autoPlayInterval: Duration(seconds: 5),
+                      autoPlay: true,
+                      enlargeCenterPage: true,
+                      onPageChanged: (index, reason) =>
+                          setState(() => activeIndex = index),
+                    ),
+                    itemCount: images.length,
+                    itemBuilder: (BuildContext, index, realIndex) {
+                      // final image = images[index];
+                      // return buildImage(image, index);
+                      final text = texts[index];
+                      return buildTextBox(text, index);
+                    },
                   ),
-                  itemCount: images.length,
-                  itemBuilder: (BuildContext, index, realIndex) {
-                    // final image = images[index];
-                    // return buildImage(image, index);
-                    final text = texts[index];
-                    return buildTextBox(text, index);
-                  },
-                ),
-                SizedBox(height: 20),
-                buildIndicator(),
-              ],
+                  SizedBox(height: 20),
+                  buildIndicator(),
+                ],
+              ),
             ),
           ),
         ],
@@ -76,11 +78,24 @@ class _mainPageState extends State<mainPage> {
 
   Widget buildTextBox(String text, int index) {
     return GestureDetector(
+       onTap: () {
+                Navigator.pushNamed(context, '/eventDetail');
+              },
         child: Container(
-      color: Colors.white,
+       decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+        color: Colors.white,),
       //height: 0,
       width: 300,
-      child: Text(text),
+      // child: Text(text),
     ));
   }
 

@@ -1,92 +1,57 @@
 import 'package:flutter/material.dart';
-
-import 'package:introduction_screen/introduction_screen.dart';
+import '../data/team_data.dart';
 
 
 
 class coreCommitee extends StatefulWidget {
+
   @override
   State<coreCommitee> createState() => _coreCommiteeState();
 }
 
 class _coreCommiteeState extends State<coreCommitee> {
-  List<PageViewModel> getPages() {
-    return [
-      PageViewModel(
-          title: "ABOUT TEAM",
-          body: "Time to REVEAL our TEAM MEMBERS",
-          image: const Center(child: Icon(Icons.android)),
-          footer: Image.asset("image\ OIP.jfif")),
-      PageViewModel(
-          image: Image.network(
-              "https://th.bing.com/th/id/OIP.3OQAJxuW1uCTas0LnpcYnwHaEK?pid=ImgDet&rs=1"),
-          title: "ABOUT TEAM",
-          body: "TEAM MEMBER 1",
-          footer: Text("this is.... "),
-          decoration: const PageDecoration(
-            pageColor: Color(0xFFF8F8F8),
-          )),
-      PageViewModel(
-        image: Image.network(
-            "https://th.bing.com/th/id/OIP.muRqmXJOvYbEI0R2RV4WiAHaJ5?pid=ImgDet&rs=1"),
-        title: "ABOUT TEAM",
-        body: "TEAM MEMBER 2",
-        footer: Text("this is... "),
-      ),
-      PageViewModel(
-        image: Image.network(
-            "https://th.bing.com/th/id/OIP.2I8FHuzcjzBn6uhpq9u5UQHaEK?pid=ImgDet&rs=1"),
-        title: "ABOUT TEAM",
-        body: "TEAM MEMBER 3",
-        footer: Text("this is...."),
-      ),
-      PageViewModel(
-        image: Image.network(
-            "https://th.bing.com/th/id/OIP.ccBayBfouWdiHsliKzPRhAHaLG?pid=ImgDet&w=683&h=1024&rs=1"),
-        title: "ABOUT TEAM ",
-        body: "TEAM MEMBER 4",
-        footer: Text("this is.... "),
-      ),
-    ];
-  }
+  TeamListItemData instance = TeamListItemData();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("TEAM REVEAL"),
-      ),
-      body: IntroductionScreen(
-        globalBackgroundColor: Color.fromARGB(255, 240, 238, 238),
-        pages: getPages(),
-        showNextButton: false,
-        showSkipButton: true,
-        skip: Text("Skip"),
-        done: Text("Got it "),
-        onDone: () {},
-      ),
-    );
-  }
-}
-
-class FinalScreen extends StatelessWidget {
-  const FinalScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('GeeksForGeeks'),
-      ),
-      body: Container(
-        color: Colors.red[200],
-        child: Center(
-          child: Text(
-            'Final',
-            style: TextStyle(fontSize: 48.0),
-          ),
+        appBar: AppBar(
+          title: Text("TEAM REVEAL"),
         ),
-      ),
-    );
+        body: ListView.builder(
+          itemCount: instance.teamData.length, // change this as needed
+          itemBuilder: (BuildContext context, int index) {
+            return Card(
+              margin: EdgeInsets.all(10),
+              child: Padding(
+                padding: EdgeInsets.all(20),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CircleAvatar(
+                      backgroundImage: NetworkImage('https://thumbs.dreamstime.com/b/nice-to-talk-smart-person-indoor-shot-attractive-interesting-caucasian-guy-smiling-broadly-nice-to-112345489.jpg'),
+                      radius: 50,
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      instance.teamData[index].name,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    Text(
+                      instance.teamData[index].desc,
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        ));
   }
 }
