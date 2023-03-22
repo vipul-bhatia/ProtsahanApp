@@ -1,9 +1,6 @@
-
 import 'package:flutter/material.dart';
 
-
 class itenaryPage extends StatefulWidget {
-
   @override
   State<itenaryPage> createState() => _itenaryPageState();
 }
@@ -16,489 +13,1943 @@ class _itenaryPageState extends State<itenaryPage> {
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16, 16, 24, 0),
-              child: Row(
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Column(
                 mainAxisSize: MainAxisSize.max,
-                children: [
-                  Text(
-                    'Activity',
-                    style: TextStyle(
-                          fontFamily: 'Lexend Deca',
-                          color: Color(0xFF090F13),
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16, 4, 24, 24),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Text(
-                    'All Events Description',
-                    style: TextStyle(
-                          fontFamily: 'Lexend Deca',
-                          color: Color(0xFF95A1AC),
-                          fontSize: 14,
-                          fontWeight: FontWeight.normal,
-                        ),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
-                    child: Column(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 16, 24, 0),
+                    child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Container(
-                          width: 16,
-                          height: 16,
-                          decoration: BoxDecoration(
-                            color: Color(0xFF95A1AC),
-                            shape: BoxShape.circle,
-                          ),
-                        ),
-                        Container(
-                          width: 2,
-                          height: 110,
-                          decoration: BoxDecoration(
-                            color: Color(0xFF95A1AC),
+                        Text(
+                          'Day 1',
+                          style: TextStyle(
+                            fontFamily: 'Lexend Deca',
+                            color: Color(0xFF090F13),
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
-                    child: Container(
-                      width: MediaQuery.of(context).size.width * 0.85,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 4, 24, 24),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Text(
+                          'All Events Description',
+                          style: TextStyle(
+                            fontFamily: 'Lexend Deca',
+                            color: Color(0xFF95A1AC),
+                            fontSize: 14,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
                             mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
-                                '14, Sept. 2021',
-                                style: TextStyle(
-                                      fontFamily: 'Lexend Deca',
-                                      color: Color(0xFF95A1AC),
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal,
-                                    ),
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
                               ),
-                             
+                              Container(
+                                width: 2,
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
                             ],
                           ),
-                          Row(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Text(
-                                'Event',
-                                style: TextStyle(
-                                      fontFamily: 'Lexend Deca',
-                                      color: Color(0xFF090F13),
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                              ),
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
-                                child: Text(
-                                  'Details',
-                                  style:TextStyle(
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '25, Mar 2023',
+                                      style: TextStyle(
                                         fontFamily: 'Lexend Deca',
-                                        color: Color(0xFF4B39EF),
-                                        fontSize: 18,
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Urban',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
                                         fontWeight: FontWeight.w500,
                                       ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Container(
-                                  width: 30,
-                                  height: 30,
-                                  clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                  ),
-                                  child: Image.network(
-                                    'https://picsum.photos/seed/252/600',
-                                  ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Games',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      8, 0, 0, 0),
-                                  child: Text(
-                                    'Andrew F.',
-                                    style: TextStyle(
-                                          fontFamily: 'Lexend Deca',
-                                          color: Color(0xFF95A1AC),
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.normal,
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''Fun games to make memories worth 
+remembering are here! Be there and add 
+fun to your college life. The games description 
+are as follows: Location: Football Ground ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.035,
+                                            fontWeight: FontWeight.normal,
+                                          ),
                                         ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ],
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
-                    child: Column(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Container(
-                          width: 16,
-                          height: 16,
-                          decoration: BoxDecoration(
-                            color: Color(0xFF95A1AC),
-                            shape: BoxShape.circle,
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 110,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                        Container(
-                          width: 2,
-                          height: 110,
-                          decoration: BoxDecoration(
-                            color: Color(0xFF95A1AC),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '25, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Human',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Football',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF39D2C0),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''Human foosball is a team-building and 
+recreational activity that simulates the classic 
+tabletop foosball game, but on a larger scale. 
+      ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.035,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
-                    child: Container(
-                      width: MediaQuery.of(context).size.width * 0.85,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Column(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '25, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Body',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Zorbing',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''Body Zorbing is a fun activity where players 
+wear inflatable suits that cover their upper body 
+and head, leaving their legs free.
+The objective of the game is to knock down 
+opponents by running into them with the inflated suit. ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.031,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                     Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '25, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Paint',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Ball',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''Body Zorbing is a fun activity where players 
+wear inflatable suits that cover their upper body 
+and head, leaving their legs free.
+The objective of the game is to knock down 
+opponents by running into them with the inflated suit. ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.031,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                     Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '25, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Elimainator',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Game',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''Body Zorbing is a fun activity where players 
+wear inflatable suits that cover their upper body 
+and head, leaving their legs free.
+The objective of the game is to knock down 
+opponents by running into them with the inflated suit. ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.031,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                     Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '25, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Fun',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Fair',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''Body Zorbing is a fun activity where players 
+wear inflatable suits that cover their upper body 
+and head, leaving their legs free.
+The objective of the game is to knock down 
+opponents by running into them with the inflated suit. ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.031,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                     Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '25, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'DJ',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Night',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''Body Zorbing is a fun activity where players 
+wear inflatable suits that cover their upper body 
+and head, leaving their legs free.
+The objective of the game is to knock down 
+opponents by running into them with the inflated suit. ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.031,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                '14, Sept. 2021',
-                                style:TextStyle(
-                                      fontFamily: 'Lexend Deca',
-                                      color: Color(0xFF95A1AC),
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                              ),
-                              Icon(
-                                Icons.chevron_right_rounded,
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(23, 0, 0, 0),
+                            child: Container(
+                              width: 2,
+                              height: 152,
+                              decoration: BoxDecoration(
                                 color: Color(0xFF95A1AC),
-                                size: 24,
                               ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Text(
-                                'Event',
-                                style: TextStyle(
-                                      fontFamily: 'Lexend Deca',
-                                      color: Color(0xFF090F13),
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                              ),
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
-                                child: Text(
-                                  'Details',
-                                  style: TextStyle(
-                                        fontFamily: 'Lexend Deca',
-                                        color: Color(0xFF39D2C0),
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Container(
-                                  width: 30,
-                                  height: 30,
-                                  clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                  ),
-                                  child: Image.network(
-                                    'https://picsum.photos/seed/252/600',
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      8, 0, 0, 0),
-                                  child: Text(
-                                    'Andrew F.',
-                                    style:TextStyle(
-                                          fontFamily: 'Lexend Deca',
-                                          color: Color(0xFF95A1AC),
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.normal,
-                                        ),
-                                  ),
-                                ),
-                              ],
                             ),
                           ),
                         ],
                       ),
-                    ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 26, 0, 0),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 0,
+                                color: Color(0xFF95A1AC),
+                                offset: Offset(0, 1),
+                              )
+                            ],
+                            borderRadius: BorderRadius.circular(0),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(12, 12, 12, 12),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
+                
                 ],
               ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-              child: Row(
+      
+      
+              //Day 2
+              Column(
                 mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
-                    child: Column(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 16, 24, 0),
+                    child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Container(
-                          width: 16,
-                          height: 16,
-                          decoration: BoxDecoration(
-                            color: Color(0xFF95A1AC),
-                            shape: BoxShape.circle,
-                          ),
-                        ),
-                        Container(
-                          width: 2,
-                          height: 100,
-                          decoration: BoxDecoration(
-                            color: Color(0xFF95A1AC),
+                        Text(
+                          'Day 2',
+                          style: TextStyle(
+                            fontFamily: 'Lexend Deca',
+                            color: Color(0xFF090F13),
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
-                    child: Container(
-                      width: MediaQuery.of(context).size.width * 0.85,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 4, 24, 24),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Text(
+                          'All Events Description',
+                          style: TextStyle(
+                            fontFamily: 'Lexend Deca',
+                            color: Color(0xFF95A1AC),
+                            fontSize: 14,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
                             mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
-                                '14, Sept. 2021',
-                                style: TextStyle(
-                                      fontFamily: 'Lexend Deca',
-                                      color: Color(0xFF95A1AC),
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal,
-                                    ),
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
                               ),
-                              Icon(
-                                Icons.chevron_right_rounded,
-                                color: Color(0xFF95A1AC),
-                                size: 24,
+                              Container(
+                                width: 2,
+                                height: 160,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
                               ),
                             ],
                           ),
-                          Row(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Text(
-                                'Event',
-                                style: TextStyle(
-                                      fontFamily: 'Lexend Deca',
-                                      color: Color(0xFF090F13),
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                              ),
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
-                                child: Text(
-                                  'Details',
-                                  style: TextStyle(
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '26, Mar 2023',
+                                      style: TextStyle(
                                         fontFamily: 'Lexend Deca',
-                                        color: Color(0xFF4B39EF),
-                                        fontSize: 18,
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Battle',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
                                         fontWeight: FontWeight.w500,
                                       ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Container(
-                                  width: 30,
-                                  height: 30,
-                                  clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                  ),
-                                  child: Image.network(
-                                    'https://thumbs.dreamstime.com/b/nice-to-talk-smart-person-indoor-shot-attractive-interesting-caucasian-guy-smiling-broadly-nice-to-112345489.jpg',
-                                  ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'of Bands',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      8, 0, 0, 0),
-                                  child: Text(
-                                    'Andrew F.',
-                                    style:TextStyle(
-                                          fontFamily: 'Lexend Deca',
-                                          color: Color(0xFF95A1AC),
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.normal,
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''In this event, the music group of MPSTME, 
+i.e, Harmony would be showcasing their 
+music performance. Participate in this 
+musical banter and make your evening musical.  ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.035,
+                                            fontWeight: FontWeight.normal,
+                                          ),
                                         ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ],
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
-            ),
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Column(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(23, 0, 0, 0),
-                      child: Container(
-                        width: 2,
-                        height: 152,
-                        decoration: BoxDecoration(
-                          color: Color(0xFF95A1AC),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 170,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                    ),
-                  ],
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 26, 0, 0),
-                  child: Container(
-                    width: MediaQuery.of(context).size.width * 0.9,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 0,
-                          color: Color(0xFF95A1AC),
-                          offset: Offset(0, 1),
-                        )
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '26, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Rang',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Drama',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF39D2C0),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''Be a part of an wonderful act by Rang – 
+The Drama Society of NMIMS. 
+Be there to appreciate and applause 
+their performance. ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.035,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
                       ],
-                      borderRadius: BorderRadius.circular(0),
                     ),
-                    child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(12, 12, 12, 12),
-                      child: Row(
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 170,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '26, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Fashion',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Show',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''A fashion show is organized for the students 
+and faculties to bring their inner fashionista 
+outside. Participate and show your fashion skills.''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.035,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                     Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 170,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '26, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Dance',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Battle',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''Be part of the most ferocious dance battle 
+between Beatlockers and Dance Dukes. 
+Be there to support your favourite group and 
+make the evening enjoyable''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.035,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                        
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(23, 0, 0, 0),
+                            child: Container(
+                              width: 2,
+                              height: 152,
+                              decoration: BoxDecoration(
+                                color: Color(0xFF95A1AC),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 26, 0, 0),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 0,
+                                color: Color(0xFF95A1AC),
+                                offset: Offset(0, 1),
+                              )
+                            ],
+                            borderRadius: BorderRadius.circular(0),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(12, 12, 12, 12),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+               
+                ],
+              ),
+
+
+
+
+
+
+
+
+
+
+
+              // Day 1 and 2
+              Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 16, 24, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Text(
+                          'Day 2',
+                          style: TextStyle(
+                            fontFamily: 'Lexend Deca',
+                            color: Color(0xFF090F13),
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ),
-              ],
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-              child: Text(
-                'Itenary Page',
-                style: TextStyle(
-                      fontFamily: 'Lexend Deca',
-                      color: Color(0xFF090F13),
-                      fontSize: 18,
-                      fontWeight: FontWeight.w500,
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 4, 24, 24),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Text(
+                          'All Events Description',
+                          style: TextStyle(
+                            fontFamily: 'Lexend Deca',
+                            color: Color(0xFF95A1AC),
+                            fontSize: 14,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                      ],
                     ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 160,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '26, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Battle',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'of Bands',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''In this event, the music group of MPSTME, 
+i.e, Harmony would be showcasing their 
+music performance. Participate in this 
+musical banter and make your evening musical.  ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.035,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 170,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '26, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Rang',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Drama',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF39D2C0),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''Be a part of an wonderful act by Rang – 
+The Drama Society of NMIMS. 
+Be there to appreciate and applause 
+their performance. ''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.035,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 12, 0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 16,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              Container(
+                                width: 2,
+                                height: 100,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFF95A1AC),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      '26, Mar 2023',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF95A1AC),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      'Fashion',
+                                      style: TextStyle(
+                                        fontFamily: 'Lexend Deca',
+                                        color: Color(0xFF090F13),
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                                      child: Text(
+                                        'Show',
+                                        style: TextStyle(
+                                          fontFamily: 'Lexend Deca',
+                                          color: Color(0xFF4B39EF),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            8, 0, 0, 0),
+                                        child: Text(
+                                          '''A fashion show is organized for the students 
+and faculties to bring their inner fashionista 
+outside. Participate and show your fashion skills.''',
+                                          style: TextStyle(
+                                            fontFamily: 'Lexend Deca',
+                                            color: Color(0xFF95A1AC),
+                                            fontSize:
+                                                MediaQuery.of(context).size.width *
+                                                    0.035,
+                                            fontWeight: FontWeight.normal,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Column(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(23, 0, 0, 0),
+                            child: Container(
+                              width: 2,
+                              height: 152,
+                              decoration: BoxDecoration(
+                                color: Color(0xFF95A1AC),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 26, 0, 0),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 0,
+                                color: Color(0xFF95A1AC),
+                                offset: Offset(0, 1),
+                              )
+                            ],
+                            borderRadius: BorderRadius.circular(0),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(12, 12, 12, 12),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+               
+                ],
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
