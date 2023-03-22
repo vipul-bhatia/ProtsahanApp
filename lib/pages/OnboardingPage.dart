@@ -36,8 +36,8 @@ class OnboardingPage extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
               ),
-              child: Image.network(
-                'https://images.unsplash.com/photo-1574914629385-46448b767aec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGF0dGV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+              child: Image.asset(
+                'Assets/logo-watermark.png',
                 fit: BoxFit.cover,
                 // '${FirebaseAuth.instance.currentUser!.photoURL}',
               ),

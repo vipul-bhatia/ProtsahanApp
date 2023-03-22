@@ -43,7 +43,7 @@ class _itenaryPageState extends State<itenaryPage> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Text(
-                    'All Activity from this past month.',
+                    'All Events Description',
                     style: TextStyle(
                           fontFamily: 'Lexend Deca',
                           color: Color(0xFF95A1AC),
@@ -109,11 +109,7 @@ class _itenaryPageState extends State<itenaryPage> {
                                       fontWeight: FontWeight.normal,
                                     ),
                               ),
-                              Icon(
-                                Icons.chevron_right_rounded,
-                                color: Color(0xFF95A1AC),
-                                size: 24,
-                              ),
+                             
                             ],
                           ),
                           Row(
