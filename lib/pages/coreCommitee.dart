@@ -16,12 +16,13 @@ class _coreCommiteeState extends State<coreCommitee> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("TEAM REVEAL"),
-        ),
+        
         body: SingleChildScrollView(
+
         child: Column(
           children: [
+            SizedBox(
+              height: 60,),
              Text(
               'Faculty Incharge',
               style: TextStyle(
@@ -200,7 +201,7 @@ class _coreCommiteeState extends State<coreCommitee> {
                   children: [
                     CircleAvatar(
                       backgroundImage: Image.asset(instance.teamData[index].imgAddr).image,
-                      radius: 50,
+                      radius: 80,
                     ),
                     SizedBox(height: 10),
                     Text(
