@@ -27,47 +27,244 @@ class _mainPageState extends State<mainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.black,
       body: Stack(
         children: [
-          Container(
-            width: double.infinity,
-            height: double.infinity,
-            child: Image.network(
-              'https://images.unsplash.com/photo-1574914629385-46448b767aec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGF0dGV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-              width: MediaQuery.of(context).size.width,
-              height: 150,
-              fit: BoxFit.cover,
-            ),
-          ),
+     
           Center(
-            child: Container(
-             margin: EdgeInsets.fromLTRB(0, 300, 0, 0), 
-              
-              child: Column(
-                children: <Widget>[
-                  CarouselSlider.builder(
-                    options: CarouselOptions(
-                      // enlargeStrategy: CenterPageEnlargeStrategy.height,
-                      // enlargeFactor: 0.65,
-                      height: 300,
-                      autoPlayInterval: Duration(seconds: 5),
-                      autoPlay: true,
-                      enlargeCenterPage: true,
-                      onPageChanged: (index, reason) =>
-                          setState(() => activeIndex = index),
+            child: CarouselSlider(
+              items: [
+                Card(
+                  child: Container(
+                    width: 300,
+                    height: 400,
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                            radius: 100,
+                            backgroundImage: Image.network(
+                                    'https://static.vecteezy.com/system/resources/previews/003/530/252/original/fashion-show-rgb-color-icon-vector.jpg')
+                                .image),
+                                SizedBox(height: 10,),
+                        Text(
+                          'Fashion Show',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          '26 , Dec 2023',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
                     ),
-                    itemCount: images.length,
-                    itemBuilder: (BuildContext, index, realIndex) {
-                      // final image = images[index];
-                      // return buildImage(image, index);
-                      final text = texts[index];
-                      return buildTextBox(text, index);
-                    },
                   ),
-                  SizedBox(height: 20),
-                  buildIndicator(),
-                ],
+                ),
+
+                Card(
+                  child: Container(
+                    width: 300,
+                    height: 400,
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Image.network(
+                              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVnZ-HR-c1u55THt_-YE0qf8MsToBvmxcn4g&usqp=CAU'),
+                        ),
+                        SizedBox(height: 20,),
+                        Text(
+                          'Dance Battle',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          '26 , Dec 2023',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Card(
+                  child: Container(
+                    width: 300,
+                    height: 400,
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Image.network(
+                              'https://i.pinimg.com/originals/93/3f/3e/933f3e964c63811c539ff9ba39f4ee28.png'),
+                        ),
+                        Text(
+                          'Battle of Bands',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          '26 , Dec 2023',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Card(
+                  child: Container(
+                    width: 300,
+                    height: 400,
+                    child: Column(
+                      children: [
+      Container(
+        height: 190,
+        child: Image.network('https://cdn-icons-png.flaticon.com/512/996/996512.png'),
+      ),
+   
+                        Text(
+                          'Paintball',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          '25 , Dec 2023',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: MediaQuery.of(context).size.width * 0.04,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                  Card(
+                  child: Container(
+                    width: 300,
+                    height: 400,
+                    child: Column(
+                      children: [
+      Container(
+        height: 190,
+        child: Image.network('https://t3.ftcdn.net/jpg/03/21/45/60/360_F_321456012_jIm6CGzNAHObXGh5YK4PhKULiAwtnLiM.jpg'),
+      ),
+   
+                        Text(
+                          'Human FoosBall',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          '25 , Dec 2023',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: MediaQuery.of(context).size.width * 0.04,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Card(
+                  child: Container(
+                    width: 300,
+                    height: 400,
+                    child: Column(
+                      children: [
+      Container(
+        height: 190,
+        child: Image.network('https://cdn-icons-png.flaticon.com/512/2857/2857532.png'),
+      ),
+   
+                        Text(
+                          'Talent Hunt',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          '25 & 26 Dec 2023',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: MediaQuery.of(context).size.width * 0.04,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Card(
+                  child: Container(
+                    width: 300,
+                    height: 400,
+                    child: Column(
+                      children: [
+      Container(
+        height: 190,
+        child: Image.network('https://cdn-icons-png.flaticon.com/512/2857/2857532.png'),
+      ),
+   
+                        Text(
+                          'DJ Night',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          '25 Dec 2023',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: MediaQuery.of(context).size.width * 0.04,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+              
+              options: CarouselOptions(
+                height: 300.0,
+                autoPlay: true,
+                autoPlayInterval: Duration(seconds: 3),
+                autoPlayAnimationDuration: Duration(milliseconds: 1200),
+                autoPlayCurve: Curves.slowMiddle,
+                enlargeCenterPage: true,
+                aspectRatio: 16 / 9,
+                enableInfiniteScroll: true,
+                viewportFraction: 0.8,
+                scrollDirection: Axis.horizontal,
               ),
             ),
           ),
@@ -78,25 +275,40 @@ class _mainPageState extends State<mainPage> {
 
   Widget buildTextBox(String text, int index) {
     return GestureDetector(
-       onTap: () {
-                Navigator.pushNamed(context, '/eventDetail');
-              },
-        child: Container(
-       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.5),
-            spreadRadius: 5,
-            blurRadius: 7,
-            offset: Offset(0, 3), // changes position of shadow
-          ),
-        ],
-        color: Colors.white,),
-      //height: 0,
-      width: 300,
-      // child: Text(text),
-    ));
+      onTap: () {
+        Navigator.pushNamed(context, '/eventDetail');
+      },
+      child: Container(
+        width: 300,
+        height: 400,
+        child: Column(
+          children: [
+            Container(
+              height: 200,
+              child: Image.network(
+                  'https://static.vecteezy.com/system/resources/previews/003/530/252/original/fashion-show-rgb-color-icon-vector.jpg',
+                  fit: BoxFit.fill),
+            ),
+            Text(
+              'Prof. Bhushan Inje',
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              'Cultural Faculty Incharge',
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   Widget buildIndicator() => AnimatedSmoothIndicator(
